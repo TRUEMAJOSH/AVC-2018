@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Desktop/Team4AVC2018/main.cpp" "D:/Desktop/Team4AVC2018/cmake-build-debug/CMakeFiles/Team4AVC2018.dir/main.cpp.obj"
+  "D:/Desktop/AVC-2018/main.cpp" "D:/Desktop/AVC-2018/cmake-build-debug/CMakeFiles/Team4AVC2018.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
