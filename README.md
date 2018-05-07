@@ -13,10 +13,11 @@
 ****************************
 ******Week One Review******
 ****************************
- * Prototyping complete, working on a final design.
+ * Prototyping complete, 3d models for final design have been developed.
  * Code for weighted pixel detection complete
  * Hardware has not been assembled yet, robot
    has yet to drive straight.
+   
    
 ****************************
 *****Week Two Checklist*****
