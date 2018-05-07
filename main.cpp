@@ -4,6 +4,8 @@
 
 void process_image();
 
+bool open_gate();
+
 
 int main() {
 	init();
@@ -11,6 +13,21 @@ int main() {
 	process_image();
 
     return 0;
+}
+
+bool open_gate(){
+    char ip[] = {'1','2','7','.','0','.','0','1'};
+    int port = 0;
+
+    connect_to_server(ip, port);
+
+    char message[] = {'P','l','e','a','s','e'};     //Mock up gate network code
+    send_to_server(message);
+
+    receive_from_server(message);
+
+    send_to_server(message);
+
 }
 
 void process_image(){
