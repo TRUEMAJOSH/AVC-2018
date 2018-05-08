@@ -1,7 +1,7 @@
 #!/bin/sh
 IP=pi@10.140.30.40
-DIRPI=/home/pi/Desktop/
-DIRPC="/mnt/d/Desktop/Team4AVC2018"
+DIRPI=/home/pi/Desktop/Team4AVC2018
+DIRPC="/mnt/d/Desktop/AVC-2018"
 echo Deleting old c files
 sshpass -p 'raspberry' ssh -x $IP 'cd $DIRPI; rm *.cpp'
 echo Transfering files to PI

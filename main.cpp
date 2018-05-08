@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h> 
+#include <ctype.h>
 #include <cmath>
 
 
@@ -59,10 +59,10 @@ void process_image(){
         // (pixels > average_brightness) will return 1 if the pixel is white or 0 of it's black
         // abs(x - 160) returns the absolute value of x - 160, this gives us the distance from the center meaning the very left most / right most pixel have the weight value of 159/160
         // * (x < 160) ? -1 : 1 means that if x is less than 160 everything will be multiplied by -1, otherwise by 1.
-        error += (pixel > average_brightness) * (abs(x - 160)) * ((x < 160) ? -1 : 1);
+        error += (pixel > average_brightness) * (std::abs(x - 160)) * ((x < 160) ? -1 : 1);
     }
 
 
-    printf("error : %d", error);
+    std::printf("error : %d", error);
 }
 
