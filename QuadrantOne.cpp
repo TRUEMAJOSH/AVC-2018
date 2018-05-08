@@ -27,7 +27,7 @@ int MOTOR_RIGHT = 2; //Right motor pin number
 unsigned char MOTOR_SPEED = 100;
 
 int quadOne(){
-    time_t cTime;
+    time_t cTime; //Current time
     int cError = get_error(); //Gets current error value
     time(&cTime); //Gets current time
 
