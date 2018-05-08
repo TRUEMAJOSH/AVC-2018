@@ -1,6 +1,11 @@
 #include <iostream>
 #include "E101.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h> 
+#include <cmath>
+
 
 void process_image();
 
