@@ -36,6 +36,8 @@ int quadOne(){
     //Something something change motor speeds
 
 
+    double motorAdjustment = cError * Kp + dE * Kd; //The final motor adjustment
+
     pTime = cTime; //Assigns previous time to current time
     pError = cError; //Assigns previous error value to current error value
 }
