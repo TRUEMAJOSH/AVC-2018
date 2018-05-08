@@ -122,6 +122,60 @@ Team4AVC2018/fast:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/build
 .PHONY : Team4AVC2018/fast
 
+QuadrantOne.obj: QuadrantOne.cpp.obj
+
+.PHONY : QuadrantOne.obj
+
+# target to build an object file
+QuadrantOne.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj
+.PHONY : QuadrantOne.cpp.obj
+
+QuadrantOne.i: QuadrantOne.cpp.i
+
+.PHONY : QuadrantOne.i
+
+# target to preprocess a source file
+QuadrantOne.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.i
+.PHONY : QuadrantOne.cpp.i
+
+QuadrantOne.s: QuadrantOne.cpp.s
+
+.PHONY : QuadrantOne.s
+
+# target to generate assembly for a file
+QuadrantOne.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.s
+.PHONY : QuadrantOne.cpp.s
+
+get_error.obj: get_error.cpp.obj
+
+.PHONY : get_error.obj
+
+# target to build an object file
+get_error.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj
+.PHONY : get_error.cpp.obj
+
+get_error.i: get_error.cpp.i
+
+.PHONY : get_error.i
+
+# target to preprocess a source file
+get_error.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/get_error.cpp.i
+.PHONY : get_error.cpp.i
+
+get_error.s: get_error.cpp.s
+
+.PHONY : get_error.s
+
+# target to generate assembly for a file
+get_error.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/get_error.cpp.s
+.PHONY : get_error.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +212,12 @@ help:
 	@echo ... Team4AVC2018
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... QuadrantOne.obj
+	@echo ... QuadrantOne.i
+	@echo ... QuadrantOne.s
+	@echo ... get_error.obj
+	@echo ... get_error.i
+	@echo ... get_error.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
