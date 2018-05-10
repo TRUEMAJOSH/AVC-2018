@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Desktop/AVC-2018/E101.h
+
+D:/Desktop/AVC-2018/QuadrantOne.cpp
+functions.h
+D:/Desktop/AVC-2018/functions.h
+
+D:/Desktop/AVC-2018/functions.h
+iostream
+-
+E101.h
+D:/Desktop/AVC-2018/E101.h
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+cmath
+-
+time.h
+-
+
+D:/Desktop/AVC-2018/get_error.cpp
+functions.h
+D:/Desktop/AVC-2018/functions.h
+
+D:/Desktop/AVC-2018/main.cpp
+functions.h
+D:/Desktop/AVC-2018/functions.h
+

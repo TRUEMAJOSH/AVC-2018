@@ -13,7 +13,7 @@
 #include <ctype.h>
 #include <cmath>
 
-#include <time.h>;
+#include <time.h>
 
 int get_error();
 bool open_gate();
