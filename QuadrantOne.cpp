@@ -1,25 +1,9 @@
-//
-// Created by Tim on 9/05/2018.
-//
-
-#include <iostream>
-#include "E101.h"
-
-#include <chrono>
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <cmath>
-#include <time.h>;
-
-int get_error();
-
+#include "functions.h"
 
 time_t pTime = 0; //Previous time
 int pError = 0; //Previous error
-double Kp = 0.005; //Coefficient for proportionality - adjustable
-double Kd = 0.5; //Coefficient for derivative - adjustable
+double Kp = -0.005; //Coefficient for proportionality - adjustable
+double Kd = -0.5; //Coefficient for derivative - adjustable
 
 int MOTOR_LEFT = 1; //Left motor pin number
 int MOTOR_RIGHT = 2; //Right motor pin number
@@ -31,9 +15,12 @@ int quadOne(){
     int cError = get_error(); //Gets current error value
     time(&cTime); //Gets current time
 
-    double dE = (double)(cError - pError) / (cTime - pTime); //Gets the derivative - I think?
+    double dv = (double)(cError - pError) / (cTime - pTime); //Gets the derivative - I think?
 
-    double motorAdjustment = cError * Kp + dE * Kd; //The final motor adjustment
+    double motorAdjustment = cError * Kp + dv * Kd; //The final motor adjustment
+
+   set_motor(MOTOR_LEFT, (char)(MOTOR_SPEED + motorAdjustment));
+   set_motor(MOTOR_RIGHT, (char)(MOTOR_SPEED - motorAdjustment));
 
     //Something something change motor speeds
 

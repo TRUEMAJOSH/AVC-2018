@@ -1,10 +1,4 @@
-#include <iostream>
-#include "E101.h"
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <cmath>
+#include "functions.h"
 
 int get_error(){
     take_picture();

@@ -83,6 +83,9 @@
 		<Unit filename="D:/Desktop/AVC-2018/QuadrantOne.cpp">
 			<Option target="Team4AVC2018"/>
 		</Unit>
+		<Unit filename="D:/Desktop/AVC-2018/functions.h">
+			<Option target="Team4AVC2018"/>
+		</Unit>
 		<Unit filename="D:/Desktop/AVC-2018/get_error.cpp">
 			<Option target="Team4AVC2018"/>
 		</Unit>
