@@ -1,6 +1,2 @@
-main: main.cpp
-	g++ -o main main.cpp -le101
-	
-QuadrantOne: QuadrantOne.cpp
-	g++ -o QuadrantOne QuadrantOne.cpp -le101
-	
+main: *.cpp
+	g++ -o main *.cpp -le101

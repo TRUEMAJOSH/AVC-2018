@@ -1,14 +1,21 @@
+
 #include "functions.h"
+
+clock_t sTime;
 
 int main() {
 	init();
 	int quadrant = 0;
 
+	sTime = clock();
 
 	while(true){
 	    switch(quadrant){
 	        case 0:
-                quadOne();
+                if(quadOne()){
+                	printf("test");
+                    goto postLoop;
+                }
 	            break;
 	        /*case 1:
 	            //Quadrant two code
@@ -24,5 +31,6 @@ int main() {
                 break;*/
 	    }
 	}
+	postLoop:
     return 0;
 }

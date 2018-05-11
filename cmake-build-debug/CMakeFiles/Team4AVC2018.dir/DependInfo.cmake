@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Desktop/AVC-2018/QuadrantOne.cpp" "D:/Desktop/AVC-2018/cmake-build-debug/CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj"
   "D:/Desktop/AVC-2018/get_error.cpp" "D:/Desktop/AVC-2018/cmake-build-debug/CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj"
   "D:/Desktop/AVC-2018/main.cpp" "D:/Desktop/AVC-2018/cmake-build-debug/CMakeFiles/Team4AVC2018.dir/main.cpp.obj"
+  "D:/Desktop/AVC-2018/quadOne.cpp" "D:/Desktop/AVC-2018/cmake-build-debug/CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

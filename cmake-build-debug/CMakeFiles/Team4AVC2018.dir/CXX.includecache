@@ -17,15 +17,15 @@ iostream
 -
 E101.h
 D:/Desktop/AVC-2018/E101.h
-stdio.h
+cstdio
 -
-stdlib.h
+cstdlib
 -
-ctype.h
+cctype
 -
 cmath
 -
-time.h
+ctime
 -
 
 D:/Desktop/AVC-2018/get_error.cpp

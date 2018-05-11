@@ -104,42 +104,42 @@ CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj.provides: CMakeFiles/Team4AVC2018.
 CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj.provides.build: CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj
 
 
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj: CMakeFiles/Team4AVC2018.dir/flags.make
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj: ../QuadrantOne.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\AVC-2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Team4AVC2018.dir\QuadrantOne.cpp.obj -c D:\Desktop\AVC-2018\QuadrantOne.cpp
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj: CMakeFiles/Team4AVC2018.dir/flags.make
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj: ../quadOne.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\AVC-2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Team4AVC2018.dir\quadOne.cpp.obj -c D:\Desktop\AVC-2018\quadOne.cpp
 
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Desktop\AVC-2018\QuadrantOne.cpp > CMakeFiles\Team4AVC2018.dir\QuadrantOne.cpp.i
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Team4AVC2018.dir/quadOne.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Desktop\AVC-2018\quadOne.cpp > CMakeFiles\Team4AVC2018.dir\quadOne.cpp.i
 
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Desktop\AVC-2018\QuadrantOne.cpp -o CMakeFiles\Team4AVC2018.dir\QuadrantOne.cpp.s
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Team4AVC2018.dir/quadOne.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Desktop\AVC-2018\quadOne.cpp -o CMakeFiles\Team4AVC2018.dir\quadOne.cpp.s
 
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.requires:
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.requires
+.PHONY : CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.requires
 
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.provides: CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.provides.build
-.PHONY : CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.provides
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.provides: CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.provides.build
+.PHONY : CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.provides
 
-CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.provides.build: CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj
+CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.provides.build: CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj
 
 
 # Object files for target Team4AVC2018
 Team4AVC2018_OBJECTS = \
 "CMakeFiles/Team4AVC2018.dir/main.cpp.obj" \
 "CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj" \
-"CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj"
+"CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj"
 
 # External object files for target Team4AVC2018
 Team4AVC2018_EXTERNAL_OBJECTS =
 
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/main.cpp.obj
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj
-Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj
+Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/build.make
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/linklibs.rsp
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/objects1.rsp
@@ -154,7 +154,7 @@ CMakeFiles/Team4AVC2018.dir/build: Team4AVC2018.exe
 
 CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/main.cpp.obj.requires
 CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj.requires
-CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj.requires
+CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.requires
 
 .PHONY : CMakeFiles/Team4AVC2018.dir/requires
 

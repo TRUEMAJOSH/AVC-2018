@@ -122,33 +122,6 @@ Team4AVC2018/fast:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/build
 .PHONY : Team4AVC2018/fast
 
-QuadrantOne.obj: QuadrantOne.cpp.obj
-
-.PHONY : QuadrantOne.obj
-
-# target to build an object file
-QuadrantOne.cpp.obj:
-	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.obj
-.PHONY : QuadrantOne.cpp.obj
-
-QuadrantOne.i: QuadrantOne.cpp.i
-
-.PHONY : QuadrantOne.i
-
-# target to preprocess a source file
-QuadrantOne.cpp.i:
-	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.i
-.PHONY : QuadrantOne.cpp.i
-
-QuadrantOne.s: QuadrantOne.cpp.s
-
-.PHONY : QuadrantOne.s
-
-# target to generate assembly for a file
-QuadrantOne.cpp.s:
-	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/QuadrantOne.cpp.s
-.PHONY : QuadrantOne.cpp.s
-
 get_error.obj: get_error.cpp.obj
 
 .PHONY : get_error.obj
@@ -203,6 +176,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+quadOne.obj: quadOne.cpp.obj
+
+.PHONY : quadOne.obj
+
+# target to build an object file
+quadOne.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj
+.PHONY : quadOne.cpp.obj
+
+quadOne.i: quadOne.cpp.i
+
+.PHONY : quadOne.i
+
+# target to preprocess a source file
+quadOne.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadOne.cpp.i
+.PHONY : quadOne.cpp.i
+
+quadOne.s: quadOne.cpp.s
+
+.PHONY : quadOne.s
+
+# target to generate assembly for a file
+quadOne.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadOne.cpp.s
+.PHONY : quadOne.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,15 +212,15 @@ help:
 	@echo ... Team4AVC2018
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... QuadrantOne.obj
-	@echo ... QuadrantOne.i
-	@echo ... QuadrantOne.s
 	@echo ... get_error.obj
 	@echo ... get_error.i
 	@echo ... get_error.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... quadOne.obj
+	@echo ... quadOne.i
+	@echo ... quadOne.s
 .PHONY : help
 
 
