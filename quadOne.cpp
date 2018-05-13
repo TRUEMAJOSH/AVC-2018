@@ -24,7 +24,7 @@ int quadOne(){
         set_motor(MOTOR_RIGHT, -MOTOR_SPEED);
         return 0;
     }
-    
+
     double timeDifference = (double)(cTime - pTime) / CLOCKS_PER_SEC;
 
     double dv = (double)(cError - pError) / timeDifference; //Gets the derivative
