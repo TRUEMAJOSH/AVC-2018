@@ -18,6 +18,8 @@ int get_error(){
     }
 
     int average_brightness = ((max-min)/2) + min; //Gets middle value of the brightness
+
+
     int np = 0;
     int error = 0;
     for(int x = 0; x < 320; x++){ //Scans the entire center row of the image
@@ -28,5 +30,14 @@ int get_error(){
             np++;
     }
 
-    return error / np;
+    if(np == 0){
+        return 0;
+    }
+    error /= np;
+
+    if(error > 700 || error < -700){
+        return (error > 700) ? -10000 : 10000;
+    }
+
+    return error;
 }
