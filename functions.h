@@ -17,8 +17,8 @@
 
 
 int get_error();
-bool open_gate();
-int quadOne();
+bool quadOne();
+int quadTwo();
 
 extern clock_t sTime;
 

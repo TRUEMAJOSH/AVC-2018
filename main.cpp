@@ -5,30 +5,29 @@ clock_t sTime;
 
 int main() {
 	init();
-	int quadrant = 0;
+	int quadrant = 2;
 
 	sTime = clock();
 
 	while(true){
 	    switch(quadrant){
-	        case 0:
-                if(quadOne()){
-                	printf("test");
+	        case 1:
+	            break;
+	        case 2:
+                if(quadTwo()){
+                    printf("test");
                     goto postLoop;
                 }
 	            break;
-	        /*case 1:
-	            //Quadrant two code
-	            break;
-	        case 2:
+	        case 3:
 	            //Quadrant three code
 	            break;
-	        case 3:
+	        case 4:
 	            //Quadrant four code
 	            break;
 	        default:
 	            //Finished the course!
-                break;*/
+                break;
 	    }
 	}
 	postLoop:
