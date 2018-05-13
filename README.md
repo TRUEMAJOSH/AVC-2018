@@ -22,9 +22,9 @@
 ****************************
 *****Week Two Checklist*****
 ****************************
- * [ ] Mason - Work on quadrant one code
- * [ ] Jericho - Assemble
- * [ ] Tim - Develop networking code/Quadrant one code
- * [ ] Ben - Assemble
+ * [x] Mason - Work on quadrant one code
+ * [x] Jericho - Assemble
+ * [x] Tim - Develop networking code/Quadrant one code
+ * [x] Ben - Assemble
  * [ ] Josh - Documentate GitHub
 
