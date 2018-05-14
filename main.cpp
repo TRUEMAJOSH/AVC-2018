@@ -12,11 +12,14 @@ int main() {
 	while(true){
 	    switch(quadrant){
 	        case 1:
+	        	if(quadOne()){
+	        		quadrant++;
+	        	}
 	            break;
 	        case 2:
                 if(quadTwo()){
-                    printf("test");
-                    goto postLoop;
+                	return 0;
+                	quadrant++;
                 }
 	            break;
 	        case 3:
@@ -26,8 +29,8 @@ int main() {
 	            //Quadrant four code
 	            break;
 	        default:
-	            //Finished the course!
-                break;
+				//Finished the course!
+	        	goto postLoop;
 	    }
 	}
 	postLoop:

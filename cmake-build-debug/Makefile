@@ -203,6 +203,33 @@ quadOne.cpp.s:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadOne.cpp.s
 .PHONY : quadOne.cpp.s
 
+quadTwo.obj: quadTwo.cpp.obj
+
+.PHONY : quadTwo.obj
+
+# target to build an object file
+quadTwo.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.obj
+.PHONY : quadTwo.cpp.obj
+
+quadTwo.i: quadTwo.cpp.i
+
+.PHONY : quadTwo.i
+
+# target to preprocess a source file
+quadTwo.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.i
+.PHONY : quadTwo.cpp.i
+
+quadTwo.s: quadTwo.cpp.s
+
+.PHONY : quadTwo.s
+
+# target to generate assembly for a file
+quadTwo.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.s
+.PHONY : quadTwo.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,6 +248,9 @@ help:
 	@echo ... quadOne.obj
 	@echo ... quadOne.i
 	@echo ... quadOne.s
+	@echo ... quadTwo.obj
+	@echo ... quadTwo.i
+	@echo ... quadTwo.s
 .PHONY : help
 
 

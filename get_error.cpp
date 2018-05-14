@@ -19,6 +19,7 @@ int get_error(){
 
     int average_brightness = ((max-min)/2) + min; //Gets middle value of the brightness
 
+    printf("average_brightness %d\n", average_brightness);
 
     int np = 0;
     int error = 0;
@@ -35,8 +36,8 @@ int get_error(){
     }
     error /= np;
 
-    if(error > 700 || error < -700){
-        return (error > 700) ? -10000 : 10000;
+    if(average_brightness < 12){
+        return 10000;
     }
 
     return error;

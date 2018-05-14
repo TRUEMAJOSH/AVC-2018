@@ -17,10 +17,15 @@
 
 
 int get_error();
-bool quadOne();
+int quadOne();
 int quadTwo();
 
 extern clock_t sTime;
+
+extern int MOTOR_LEFT;
+extern int MOTOR_RIGHT;
+
+extern unsigned char MOTOR_SPEED;
 
 
 #endif //TEAM4AVC2018_FUNCTIONS_H
