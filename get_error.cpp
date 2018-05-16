@@ -1,5 +1,3 @@
-
-
 #include "functions.h"
 
 int get_error(){
@@ -17,9 +15,10 @@ int get_error(){
         }
     }
 
+
+    printf("max_brightness : %d\n", max);
     int average_brightness = ((max-min)/2) + min; //Gets middle value of the brightness
 
-    printf("average_brightness %d\n", average_brightness);
 
     int np = 0;
     int error = 0;
@@ -34,11 +33,11 @@ int get_error(){
     if(np == 0){
         return 0;
     }
-    error /= np;
+    printf("average_brightness %d\n", average_brightness);
+    printf("Error_value : %d\n", error);
 
-    if(average_brightness < 12){
-        return 10000;
-    }
+    error /= np;
+    printf("adjusted_error : %d\n\n\n",error);
 
     return error;
 }

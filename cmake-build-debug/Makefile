@@ -203,6 +203,33 @@ quadOne.cpp.s:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadOne.cpp.s
 .PHONY : quadOne.cpp.s
 
+quadThree.obj: quadThree.cpp.obj
+
+.PHONY : quadThree.obj
+
+# target to build an object file
+quadThree.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj
+.PHONY : quadThree.cpp.obj
+
+quadThree.i: quadThree.cpp.i
+
+.PHONY : quadThree.i
+
+# target to preprocess a source file
+quadThree.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadThree.cpp.i
+.PHONY : quadThree.cpp.i
+
+quadThree.s: quadThree.cpp.s
+
+.PHONY : quadThree.s
+
+# target to generate assembly for a file
+quadThree.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadThree.cpp.s
+.PHONY : quadThree.cpp.s
+
 quadTwo.obj: quadTwo.cpp.obj
 
 .PHONY : quadTwo.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... quadOne.obj
 	@echo ... quadOne.i
 	@echo ... quadOne.s
+	@echo ... quadThree.obj
+	@echo ... quadThree.i
+	@echo ... quadThree.s
 	@echo ... quadTwo.obj
 	@echo ... quadTwo.i
 	@echo ... quadTwo.s

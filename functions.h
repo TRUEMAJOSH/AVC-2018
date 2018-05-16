@@ -27,5 +27,8 @@ extern int MOTOR_RIGHT;
 
 extern unsigned char MOTOR_SPEED;
 
+extern int min;
+extern int max;
+
 
 #endif //TEAM4AVC2018_FUNCTIONS_H
