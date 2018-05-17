@@ -1,11 +1,11 @@
 
 #include "functions.h"
 
-clock_t sTime;
+clock_t sTime; //Initial start time
 
 int main() {
 	init();
-	int quadrant = 1;
+	int quadrant = 2;
 
 	sTime = clock();
 
@@ -18,8 +18,9 @@ int main() {
 	            break;
 	        case 2:
                 if(quadTwo()){
-                	quadrant++;
+                    quadrant++;
                 }
+
 	            break;
 	        case 3:
 	            goto postLoop;
@@ -33,7 +34,7 @@ int main() {
 	        	goto postLoop;
 	    }
 
-        //Failsafe
+        //Failsafe code
         if((double)(clock() - sTime) / CLOCKS_PER_SEC > 2.5){
             set_motor(MOTOR_LEFT, 0);
             set_motor(MOTOR_RIGHT, 0);

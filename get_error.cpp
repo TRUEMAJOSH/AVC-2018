@@ -3,6 +3,9 @@
 int get_error(){
     take_picture();
 
+    int BLACK_THRESHOLD = 50;   //Threshold for detecting all black - adjustable - change to dynamically changed?
+    int WHITE_THRESHOLD = 150;  //Threshold for detecting all white - adjustable - change to dynamically changed?
+
     int min = 255;
     int max = 0;
     for(int x = 0; x < 320; x++){
@@ -15,29 +18,29 @@ int get_error(){
         }
     }
 
+    int average_brightness = ((max-min)/2) + min;
 
-    printf("max_brightness : %d\n", max);
-    int average_brightness = ((max-min)/2) + min; //Gets middle value of the brightness
-
+    if(average_brightness < BLACK_THRESHOLD){
+        printf("average_brightness : %d\n", average_brightness);
+        return -10000;                                             //Returns -10000 when detected all black
+    }else if(average_brightness > WHITE_THRESHOLD){
+        printf("average_brightness : %d\n", average_brightness);
+        return 10000;                                              //Returns 10000 when detected all white
+    }
 
     int np = 0;
     int error = 0;
     for(int x = 0; x < 320; x++){ //Scans the entire center row of the image
         int pixel = get_pixel(120, x, 3);
         // (pixels > average_brightness) will return 1 if the pixel is white or 0 of it's black
-        error += (pixel > average_brightness) * (x-160);
-        if(pixel > average_brightness)
+        if(pixel > average_brightness) {
+            error += x-160;
             np++;
+        }
+
     }
 
-    if(np == 0){
-        return 0;
-    }
-    printf("average_brightness %d\n", average_brightness);
-    printf("Error_value : %d\n", error);
-
-    error /= np;
-    printf("adjusted_error : %d\n\n\n",error);
+    error /= np; //Sets error to error value divided by number of white pixels detected
 
     return error;
 }
