@@ -33,7 +33,7 @@
 ****************************
  * Prototyping complete, 3d models for final design have been developed.
  * Hardware mostly assembled, need to add sensor mounts and camera mount
- *code for white line following and gate opening developed
+ * code for white line following and gate opening developed
  
  ****************************
 *****Week Three Checklist*****
