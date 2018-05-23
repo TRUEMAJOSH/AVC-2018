@@ -23,7 +23,7 @@ int quadThree(){
     if(cError == -10000){
         /* Code for loss of line */
         set_motor(1,MOTOR_SPEED);
-        set_motor(2, -MOTOR_SPEED);
+        set_motor(2, 0);
         sleep1(1,0);
         printf("LOST LINE\n");
         return 0;
