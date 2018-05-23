@@ -1,58 +1,74 @@
 //
-// Created by Tim on 15/05/2018.
+// Created by Tim on 23/05/2018.
 //
-
 #include "functions.h"
 
-
-clock_t pTime; //Previous time
-int pError = 0; //Previous error
-double Kp = 0.40;   //Coefficient for proportionality - adjustable
-double Kd = 0.005;  //Coefficient for derivative - adjustable
-
-int MOTOR_LEFT = 2; //Left motor pin number
-int MOTOR_RIGHT = 1; //Right motor pin number
-
-unsigned char MOTOR_SPEED = 45; //Base motor speed
-
+void turn_left();
+void turn_right();
+void turn_around();
+bool turned_left = false;
 
 int quadThree(){
-  clock_t cTime = clock(); //Current time
-    int cError = get_error(); //Gets current error value
 
-    if(cError == -10000){
-        /* Code for loss of line */
-        set_motor(MOTOR_RIGHT,-MOTOR_SPEED);
-        set_motor(MOTOR_LEFT, -MOTOR_SPEED);
-        sleep1(0,250000);
-        printf("LOST LINE\n");
-        return 0;
-    }else if(cError == 10000){
-        /* Code for detection of all white */
-        set_motor(MOTOR_RIGHT,MOTOR_SPEED);
+    int error = get_error();
+    if(error == -10000){
         set_motor(MOTOR_LEFT, 0);
-        sleep1(0,500000);
-        printf("ALL WHITE\n");
-        return 1;
+        set_motor(MOTOR_RIGHT, 0);
+        printf("returned all black");
+        sleep1(1,0);
+        if(!turned_left){
+            turn_left();
+            turned_left = true;
+        }else{
+            turn_around();
+            turned_left = false;
+        }
+        return 0;
     }
 
-    double timeDifference = (double)(cTime - pTime) / CLOCKS_PER_SEC;
 
-    double dv = (double)(cError - pError) / timeDifference; //Gets the derivative
-
-    double motorAdjustment = cError * Kp + dv * Kd; //The final motor adjustment
-
-    set_motor(MOTOR_LEFT, (unsigned char)(MOTOR_SPEED + motorAdjustment));
-    set_motor(MOTOR_RIGHT, (unsigned char)(MOTOR_SPEED - motorAdjustment));
-
-    pTime = cTime; //Assigns previous time to current time
-    pError = cError; //Assigns previous error value to current error value*/
-    printf("FOLLOWING LINE");
+    turned_left = false;
+    set_motor(MOTOR_LEFT, MOTOR_SPEED);
+    set_motor(MOTOR_RIGHT, MOTOR_SPEED);
 
     return 0;
 }
 
+void turn_left(){
+    printf("Turning Left\n");
 
+    set_motor(MOTOR_LEFT, -(MOTOR_SPEED + (MOTOR_SPEED/2)));
+    set_motor(MOTOR_RIGHT, MOTOR_SPEED + (MOTOR_SPEED/2));
 
+    sleep1(0,225000);
+
+    set_motor(MOTOR_LEFT, 0);
+    set_motor(MOTOR_RIGHT, 0);
+
+    sleep1(1,0);
 }
 
+void turn_right(){
+    printf("Turning Right\n");
+
+    set_motor(MOTOR_LEFT, MOTOR_SPEED + (MOTOR_SPEED/2));
+    set_motor(MOTOR_RIGHT, -(MOTOR_SPEED + (MOTOR_SPEED/2)));
+
+    sleep1(0,250000);
+
+    set_motor(MOTOR_LEFT, 0);
+    set_motor(MOTOR_RIGHT, 0);
+}
+
+void turn_around(){
+
+    printf("Turning Around\n");
+    set_motor(MOTOR_LEFT, -(MOTOR_SPEED + (MOTOR_SPEED/2)));
+    set_motor(MOTOR_RIGHT, (MOTOR_SPEED + (MOTOR_SPEED/2)));
+
+    sleep1(0,400000);
+
+    set_motor(MOTOR_LEFT, 0);
+    set_motor(MOTOR_RIGHT, 0);
+    sleep1(1,0);
+}
