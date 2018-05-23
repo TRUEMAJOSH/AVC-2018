@@ -19,20 +19,21 @@ int quadTwo(){
     clock_t cTime = clock(); //Current time
     int cError = get_error(); //Gets current error value
 
-    if(cError == -10000){
-        /* Code for loss of line */
-        set_motor(1,0);
-        set_motor(2, 0);
-        sleep1(1,0);
+    /*if(cError == ALL_BLACK){
+            return 0;
+        }else{
+            set_motor(MOTOR_LEFT, -MOTOR_SPEED);
+            set_motor(MOTOR_RIGHT, -MOTOR_SPEED);
+        }
         printf("LOST LINE\n");
         return 0;
-    }else if(cError == 10000){
-        /* Code for detection of all white */
+    }else if(cError == ALL_WHITE){
         set_motor(1, 0);
         set_motor(2, 0);
         printf("ALL WHITE\n");
         return 1;
-    }
+    }*/
+
 
     double timeDifference = (double)(cTime - pTime) / CLOCKS_PER_SEC;
 
@@ -48,5 +49,4 @@ int quadTwo(){
 
     return 0;
 }
-
 

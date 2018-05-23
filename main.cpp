@@ -3,11 +3,23 @@
 
 clock_t sTime; //Initial start time
 
+int ALL_BLACK = -10000;
+int ALL_WHITE = 10000;
+int WHITE_LEFT = -15000;
+int WHITE_RIGHT = 15000;
+
+int counter = 0;
+int whitePixels = 0;
+int averagePixels = 0;
+
+int quadrant = 3;
 int main() {
 	init();
-	int quadrant = 2;
 
 	sTime = clock();
+	//quadThree();
+
+
 
 	while(true){
 	    switch(quadrant){
@@ -23,15 +35,16 @@ int main() {
 
 	            break;
 	        case 3:
-	            goto postLoop;
+	            quadThree();
 	            //Quadrant three code
 	            break;
 	        case 4:
 	            //Quadrant four code
 	            break;
 	        default:
-				//Finished the course!
-	        	goto postLoop;
+				get_error();
+				sleep1(1,0);
+				break;
 	    }
 
         //Failsafe code

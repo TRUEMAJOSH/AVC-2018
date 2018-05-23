@@ -8,10 +8,6 @@
 
 D:/Desktop/AVC-2018/E101.h
 
-D:/Desktop/AVC-2018/QuadrantOne.cpp
-functions.h
-D:/Desktop/AVC-2018/functions.h
-
 D:/Desktop/AVC-2018/functions.h
 iostream
 -
@@ -25,7 +21,7 @@ cctype
 -
 cmath
 -
-ctime
+sys/time.h
 -
 
 D:/Desktop/AVC-2018/get_error.cpp
@@ -33,6 +29,14 @@ functions.h
 D:/Desktop/AVC-2018/functions.h
 
 D:/Desktop/AVC-2018/main.cpp
+functions.h
+D:/Desktop/AVC-2018/functions.h
+
+D:/Desktop/AVC-2018/quadOne.cpp
+functions.h
+D:/Desktop/AVC-2018/functions.h
+
+D:/Desktop/AVC-2018/quadTwo.cpp
 functions.h
 D:/Desktop/AVC-2018/functions.h
 
