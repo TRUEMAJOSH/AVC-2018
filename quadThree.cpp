@@ -47,6 +47,7 @@ int quadThree(){
 
     pTime = cTime; //Assigns previous time to current time
     pError = cError; //Assigns previous error value to current error value*/
+    printf("FOLLOWING LINE");
 
     return 0;
 }
