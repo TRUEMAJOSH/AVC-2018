@@ -1,21 +1,22 @@
 
 #include "functions.h"
 
-clock_t sTime; //Initial start time
+clock_t sTime;
 
+<<<<<<< HEAD
 int ALL_BLACK = -10000;
 int ALL_WHITE = 10000;
 int WHITE_LEFT = -15000;
 int WHITE_RIGHT = 15000;
 
 int quadrant = 1;
+=======
+>>>>>>> parent of 9948b99... Somewhat working quad three code
 int main() {
 	init();
+	int quadrant = 1;
 
 	sTime = clock();
-	//quadThree();
-
-
 
 	while(true){
 	    switch(quadrant){
@@ -26,9 +27,8 @@ int main() {
 	            break;
 	        case 2:
                 if(quadTwo()){
-                    quadrant++;
+                	quadrant++;
                 }
-
 	            break;
 	        case 3:
 	            quadThree();
@@ -37,10 +37,13 @@ int main() {
 	            //Quadrant four code
 	            break;
 	        default:
-				get_error();
-				sleep1(1,0);
-				break;
+				//Finished the course!
+	        	goto postLoop;
 	    }
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 9948b99... Somewhat working quad three code
         //Failsafe
         if((double)(clock() - sTime) / CLOCKS_PER_SEC > 10){
             set_motor(MOTOR_LEFT, 0);
