@@ -21,11 +21,11 @@ int quadTwo(){
 
     //printf("Error value : %d\n", cError);
 
-    if(cError == -10000){
+    if(cError == -15000){
         set_motor(MOTOR_LEFT, -MOTOR_SPEED);
         set_motor(MOTOR_RIGHT, -MOTOR_SPEED);
         return 0;
-    }else if(cError == 10000){
+    }else if(cError == 15000){
         set_motor(MOTOR_RIGHT, 0);
         set_motor(MOTOR_LEFT, 0);
         return 1;

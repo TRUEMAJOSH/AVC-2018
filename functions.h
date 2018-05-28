@@ -17,8 +17,10 @@
 
 
 int get_error();
+int get_q3_error();
 int quadOne();
 int quadTwo();
+int quadThree();
 
 extern clock_t sTime;
 

@@ -1,5 +1,9 @@
 #include "functions.h"
 
+
+int BLACK_THRESHOLD = 100;
+int WHITE_THRESHOLD = 100;
+
 int get_error(){
     take_picture();
 
@@ -17,7 +21,18 @@ int get_error(){
 
 
     printf("max_brightness : %d\n", max);
-    int average_brightness = ((max-min)/2) + min; //Gets middle value of the brightness
+    int average_brightness = ((max-min)/2) + min; //Gets mid point of brightness
+
+    if(max < BLACK_THRESHOLD){
+        printf("average : %d\n", average_brightness);
+        printf("Returned all black\n");
+        return -15000;                                             //Returns -15000 when detected all black
+    }else if(min > WHITE_THRESHOLD){
+        printf("average : %d\n", average_brightness);
+        printf("Returned all white\n");
+        return 15000;                                              //Returns 15000 when detected all white
+    }
+    printf("Returned line");
 
 
     int np = 0;
