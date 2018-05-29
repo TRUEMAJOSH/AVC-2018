@@ -7,19 +7,18 @@
 
 clock_t _pTime; //Previous time
 int _pError = 0; //Previous error
-double _Kp = 0.40;   //Coefficient for proportionality - adjustable
-double _Kd = 0.0045;  //Coefficient for derivative - adjustable
+double _Kp = 0.43;   //Coefficient for proportionality - adjustable
+double _Kd = 0.0047;  //Coefficient for derivative - adjustable
 
-unsigned char _MOTOR_SPEED = 37;
-
+unsigned char _MOTOR_SPEED = 45;
 
 int quadThree(){
     clock_t cTime = clock(); //Current time
     int cError = get_error(); //Gets current error value
 
     if(cError == -15000){
-        set_motor(MOTOR_LEFT, -(_MOTOR_SPEED + 10));
-        set_motor(MOTOR_RIGHT, -_MOTOR_SPEED);
+        set_motor(MOTOR_LEFT, -(_MOTOR_SPEED + 7) * 0.75);
+        set_motor(MOTOR_RIGHT, -_MOTOR_SPEED * 0.75);
         sleep1(0,600000);
         return 0;
     }else if(cError == 15000){
@@ -30,7 +29,9 @@ int quadThree(){
         return 0;
     }
 
-
+    if(detectRed()){
+        return 1;
+    }
 
     double timeDifference = (double)(cTime - _pTime) / CLOCKS_PER_SEC;
 
@@ -39,7 +40,6 @@ int quadThree(){
     double motorAdjustment = cError * _Kp + dv * _Kd; //The final motor adjustment
 
     printf("motor_adjustment : %f\n", cError * _Kp + dv * _Kd);
-
 
     set_motor(MOTOR_LEFT, (unsigned char)(_MOTOR_SPEED + motorAdjustment));
     set_motor(MOTOR_RIGHT, (unsigned char)(_MOTOR_SPEED - motorAdjustment));

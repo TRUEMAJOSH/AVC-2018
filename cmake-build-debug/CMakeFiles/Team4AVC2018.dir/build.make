@@ -176,13 +176,63 @@ CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj.provides: CMakeFiles/Team4AVC2018.
 CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj.provides.build: CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj
 
 
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj: CMakeFiles/Team4AVC2018.dir/flags.make
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj: ../quadFour.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\AVC-2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Team4AVC2018.dir\quadFour.cpp.obj -c D:\Desktop\AVC-2018\quadFour.cpp
+
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Team4AVC2018.dir/quadFour.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Desktop\AVC-2018\quadFour.cpp > CMakeFiles\Team4AVC2018.dir\quadFour.cpp.i
+
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Team4AVC2018.dir/quadFour.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Desktop\AVC-2018\quadFour.cpp -o CMakeFiles\Team4AVC2018.dir\quadFour.cpp.s
+
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.requires
+
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.provides: CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.provides.build
+.PHONY : CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.provides
+
+CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.provides.build: CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj
+
+
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj: CMakeFiles/Team4AVC2018.dir/flags.make
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj: ../detectRed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Desktop\AVC-2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Team4AVC2018.dir\detectRed.cpp.obj -c D:\Desktop\AVC-2018\detectRed.cpp
+
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Team4AVC2018.dir/detectRed.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Desktop\AVC-2018\detectRed.cpp > CMakeFiles\Team4AVC2018.dir\detectRed.cpp.i
+
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Team4AVC2018.dir/detectRed.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Desktop\AVC-2018\detectRed.cpp -o CMakeFiles\Team4AVC2018.dir\detectRed.cpp.s
+
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.requires:
+
+.PHONY : CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.requires
+
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.provides: CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.provides.build
+.PHONY : CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.provides
+
+CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.provides.build: CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj
+
+
 # Object files for target Team4AVC2018
 Team4AVC2018_OBJECTS = \
 "CMakeFiles/Team4AVC2018.dir/main.cpp.obj" \
 "CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj" \
 "CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.obj" \
 "CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj" \
-"CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj"
+"CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj" \
+"CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj" \
+"CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj"
 
 # External object files for target Team4AVC2018
 Team4AVC2018_EXTERNAL_OBJECTS =
@@ -192,11 +242,13 @@ Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/get_error.cpp.obj
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.obj
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj
+Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj
+Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/build.make
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/linklibs.rsp
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/objects1.rsp
 Team4AVC2018.exe: CMakeFiles/Team4AVC2018.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Desktop\AVC-2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Team4AVC2018.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Desktop\AVC-2018\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Team4AVC2018.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Team4AVC2018.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -209,6 +261,8 @@ CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/get_error.cpp.
 CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.obj.requires
 CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj.requires
 CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj.requires
+CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj.requires
+CMakeFiles/Team4AVC2018.dir/requires: CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj.requires
 
 .PHONY : CMakeFiles/Team4AVC2018.dir/requires
 

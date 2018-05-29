@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Desktop/AVC-2018/detectRed.cpp">
+			<Option target="Team4AVC2018"/>
+		</Unit>
 		<Unit filename="D:/Desktop/AVC-2018/functions.h">
 			<Option target="Team4AVC2018"/>
 		</Unit>
@@ -87,6 +90,9 @@
 			<Option target="Team4AVC2018"/>
 		</Unit>
 		<Unit filename="D:/Desktop/AVC-2018/main.cpp">
+			<Option target="Team4AVC2018"/>
+		</Unit>
+		<Unit filename="D:/Desktop/AVC-2018/quadFour.cpp">
 			<Option target="Team4AVC2018"/>
 		</Unit>
 		<Unit filename="D:/Desktop/AVC-2018/quadOne.cpp">

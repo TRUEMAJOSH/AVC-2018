@@ -17,20 +17,17 @@
 
 
 int get_error();
-int get_q3_error();
+int detectRed();
+
 int quadOne();
 int quadTwo();
 int quadThree();
+int quadFour();
 
 extern clock_t sTime;
 
 extern int MOTOR_LEFT;
 extern int MOTOR_RIGHT;
-
-extern unsigned char MOTOR_SPEED;
-
-extern int min;
-extern int max;
 
 
 #endif //TEAM4AVC2018_FUNCTIONS_H

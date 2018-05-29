@@ -122,6 +122,33 @@ Team4AVC2018/fast:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/build
 .PHONY : Team4AVC2018/fast
 
+detectRed.obj: detectRed.cpp.obj
+
+.PHONY : detectRed.obj
+
+# target to build an object file
+detectRed.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj
+.PHONY : detectRed.cpp.obj
+
+detectRed.i: detectRed.cpp.i
+
+.PHONY : detectRed.i
+
+# target to preprocess a source file
+detectRed.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/detectRed.cpp.i
+.PHONY : detectRed.cpp.i
+
+detectRed.s: detectRed.cpp.s
+
+.PHONY : detectRed.s
+
+# target to generate assembly for a file
+detectRed.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/detectRed.cpp.s
+.PHONY : detectRed.cpp.s
+
 get_error.obj: get_error.cpp.obj
 
 .PHONY : get_error.obj
@@ -175,6 +202,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+quadFour.obj: quadFour.cpp.obj
+
+.PHONY : quadFour.obj
+
+# target to build an object file
+quadFour.cpp.obj:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj
+.PHONY : quadFour.cpp.obj
+
+quadFour.i: quadFour.cpp.i
+
+.PHONY : quadFour.i
+
+# target to preprocess a source file
+quadFour.cpp.i:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadFour.cpp.i
+.PHONY : quadFour.cpp.i
+
+quadFour.s: quadFour.cpp.s
+
+.PHONY : quadFour.s
+
+# target to generate assembly for a file
+quadFour.cpp.s:
+	$(MAKE) -f CMakeFiles\Team4AVC2018.dir\build.make CMakeFiles/Team4AVC2018.dir/quadFour.cpp.s
+.PHONY : quadFour.cpp.s
 
 quadOne.obj: quadOne.cpp.obj
 
@@ -266,12 +320,18 @@ help:
 	@echo ... Team4AVC2018
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... detectRed.obj
+	@echo ... detectRed.i
+	@echo ... detectRed.s
 	@echo ... get_error.obj
 	@echo ... get_error.i
 	@echo ... get_error.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... quadFour.obj
+	@echo ... quadFour.i
+	@echo ... quadFour.s
 	@echo ... quadOne.obj
 	@echo ... quadOne.i
 	@echo ... quadOne.s

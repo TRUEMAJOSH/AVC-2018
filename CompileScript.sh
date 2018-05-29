@@ -1,5 +1,5 @@
 #!/bin/sh
-IP=pi@10.140.30.40
+IP=pi@10.140.30.3
 DIRPI=/home/pi/Desktop/
 DIRPC="/mnt/d/Desktop/AVC-2018"
 echo Deleting old c files

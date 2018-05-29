@@ -3,7 +3,6 @@
 
 clock_t sTime;
 
-int quadrant = 1;
 int main() {
 	init();
 	int quadrant = 1;
@@ -18,22 +17,25 @@ int main() {
 	        	}
 	            break;
 	        case 2:
+	        	quadOne();
                 if(quadTwo()){
                 	quadrant++;
                 }
 	            break;
 	        case 3:
-	            quadThree();
+	            if(quadThree()){
+	                quadrant++;
+	            }
 	            break;
 	        case 4:
-	            //Quadrant four code
+	            quadFour();
 	            break;
 	        default:
 				//Finished the course!
 	        	goto postLoop;
 	    }
         //Failsafe
-        if((double)(clock() - sTime) / CLOCKS_PER_SEC > 10){
+        if((double)(clock() - sTime) / CLOCKS_PER_SEC > 30){
             set_motor(MOTOR_LEFT, 0);
             set_motor(MOTOR_RIGHT, 0);
             return 0;

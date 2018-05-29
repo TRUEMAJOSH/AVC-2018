@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Team4AVC2018.dir/quadTwo.cpp.obj"
   "CMakeFiles/Team4AVC2018.dir/quadOne.cpp.obj"
   "CMakeFiles/Team4AVC2018.dir/quadThree.cpp.obj"
+  "CMakeFiles/Team4AVC2018.dir/quadFour.cpp.obj"
+  "CMakeFiles/Team4AVC2018.dir/detectRed.cpp.obj"
   "Team4AVC2018.pdb"
   "Team4AVC2018.exe"
   "Team4AVC2018.exe.manifest"
