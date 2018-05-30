@@ -19,7 +19,7 @@ int quadThree(){
     if(cError == -15000){
         set_motor(MOTOR_LEFT, -(_MOTOR_SPEED + 7) * 0.75);
         set_motor(MOTOR_RIGHT, -_MOTOR_SPEED * 0.75);
-        sleep1(0,600000);
+        sleep1(0,700000);
         return 0;
     }else if(cError == 15000){
 

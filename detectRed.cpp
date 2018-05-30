@@ -11,15 +11,15 @@ int detectRed(){
     int averageGreen = 0;
     int averageBlue = 0;
 
-    for(int x = 80; x < 240; x++){
+    for(int x = 0; x < 320; x++){
         averageRed += get_pixel(120, x, 0);
         averageGreen += get_pixel(120, x, 1);
         averageBlue += get_pixel(120, x, 2);
     }
 
-    averageRed /= 160;
-    averageBlue /= 160;
-    averageGreen /= 160;
+    averageRed /= 320;
+    averageBlue /= 320;
+    averageGreen /= 320;
 
     printf("red : %d\ngreen : %d\nblue : %d\n\n", averageRed, averageGreen, averageBlue);
 

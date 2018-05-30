@@ -17,7 +17,6 @@ int main() {
 	        	}
 	            break;
 	        case 2:
-	        	quadOne();
                 if(quadTwo()){
                 	quadrant++;
                 }
@@ -28,18 +27,12 @@ int main() {
 	            }
 	            break;
 	        case 4:
-	            quadFour();
+	            quadrant += quadFour();
 	            break;
 	        default:
 				//Finished the course!
 	        	goto postLoop;
 	    }
-        //Failsafe
-        if((double)(clock() - sTime) / CLOCKS_PER_SEC > 30){
-            set_motor(MOTOR_LEFT, 0);
-            set_motor(MOTOR_RIGHT, 0);
-            return 0;
-        }
 	}
 	postLoop:
     return 0;
